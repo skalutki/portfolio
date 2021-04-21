@@ -6,10 +6,32 @@
 @import "modules/projects.scss";
 @import "modules/contact.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&family=Roboto+Mono:ital,wght@0,400;1,600&display=swap");
 body {
   background: $white;
   color: $text;
   min-height: 100vh;
   max-width: 320px;
   width: 100%;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.position-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.mail {
+  background-color: $mailBackground;
+  border-radius: 48px;
+  height: 40px;
+  text-decoration: none;
+  color: $white;
+  padding: 4px 24px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
 }
