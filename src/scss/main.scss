@@ -1,10 +1,15 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/about-me.scss";
+@import "modules/skills.scss";
+@import "modules/projects.scss";
+@import "modules/contact.scss";
 
 body {
   background: $white;
   color: $text;
   min-height: 100vh;
+  max-width: 320px;
+  width: 100%;
 }
