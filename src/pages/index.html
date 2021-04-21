@@ -3,14 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
+    <title>Karol Skalinski Portfolio</title>
+    <meta
+      name="description"
+      content="Personal site with projects list & skill by Karol Skalinski"
+    />
     <!-- Title -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="Karol Skalinski Portfolio" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
+    <meta
+      property="og:description"
+      content="Personal site with projects list & skill by Karol Skalinski"
+    />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://skalutki.github.io/portfolio/" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta
       property="og:image"
@@ -145,9 +151,44 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <main class="main">
+      <header class="about-me">
+        <img
+          src="../assets/img/karol1.jpg"
+          alt="Profile picture with smile Karol Skalinski"
+          class="about-me__picture"
+        />
+        <h1 class="about-me__title">
+          My name is Karol and I’m an aspiring
+          <span class="color" Frontend developer></span> and a keen Formula 1
+          fan.
+        </h1>
+        <p class="about-me__description">
+          You might be interested in checking the list of
+          <a class="id" href="#skills">my skills</a>. Don’t forget to have a
+          glimpse at <a class="id" href="#projects">my projects</a>. Currently
+          I’m looking for a new challenges so if you have one -
+          <a class="id" href="#contact">contact me </a>😊
+        </p>
+
+        <a
+          href="mailto:karolskalinski@gmail.com?subject=From_portfolio_on_github"
+          class="mail"
+          >karolskalinski@gmail.com</a
+        >
+      </header>
+
+      <section class="skills" id="skills"></section>
+
+      <section class="projects" id="projects"></section>
+
+      <footer class="contact" id="contact">
+        <a
+          href="mailto:karolskalinski@gmail.com?subject=From_portfolio_on_github"
+          class="mail"
+          >karolskalinski@gmail.com</a
+        >
+      </footer>
+    </main>
   </body>
 </html>
