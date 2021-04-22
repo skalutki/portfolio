@@ -208,16 +208,26 @@
           I started my frontend developer path in 2020. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.
         </p>
         <section class="project">
-          <header class="project__header"></header>
+          <header class="project__header">
+            <span class="project__header--icon"></span>
+          </header>
           <div class="project__grid">
-            <img src="../assets/icons/Github Icon.png" class="avatar" />
+            <img src="../assets/icons/Github Icon.png" class="project__avatar" />
             <div class="nie wiem czy potrzebne">
               <!--do usunięcia w poźniejszym czasie jesli okaze sie nie potrzebne -->
               <ul class="description__list">
-                <li class="description__list--item">project: tytuł</li>
-                <li class="description__list--item">description: opis projektu</li>
-                <li class="description__list--item">demo: <^see here^></li>
-                <li class="description__list--item">github: <^source code^></li>
+                <li class="description__list--item">
+                  project: <span class="description__list--itemTitle description__list--project-title">tytuł</span>
+                </li>
+                <li class="description__list--item">description: <span class="description__list--project-description"></span> opis projektu</li>
+                <li class="description__list--item">
+                  demo: &lt;<span class="description__list--project-demo"><a href="#" class="description__list--link">see here</a></span
+                  >&gt;
+                </li>
+                <li class="description__list--item">
+                  github: &lt;<span class="description__list--project-source"><a href="#" class="description__list--link">source code</a></span
+                  >&gt;
+                </li>
               </ul>
             </div>
           </div>

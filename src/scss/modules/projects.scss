@@ -1,3 +1,60 @@
+.projects {
+  padding: 68px 16px 88px;
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    color: $textDark;
+    margin: 0 0 32px;
+  }
+  &__description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
 .project {
   font-family: "Roboto Mono", monospace;
+  &__header {
+    background-color: $projectTitleBackground;
+    height: 40px;
+    border-radius: 16px 16px 0 0;
+
+    &--icon {
+      background-color: $projectSwitch;
+      width: 8px;
+      height: 8px;
+      z-index: 3;
+    }
+  }
+  &__grid {
+    background-color: $projectBackground;
+    padding: 24px 16px 48px;
+    border-radius: 0 0 16px 16px;
+  }
+  &__avatar {
+    margin-bottom: 24px;
+  }
+}
+
+.description__list {
+  list-style: none;
+  text-align: justify-all;
+  padding: 0;
+  margin: 0;
+  &--item {
+    &Title {
+      font-weight: 700;
+      color: $white;
+    }
+  }
+  &--link {
+    color: $projectLink;
+  }
 }
