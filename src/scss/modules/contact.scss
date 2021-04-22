@@ -1,0 +1,35 @@
+.contact {
+  background-color: $BlueLight;
+  padding: 64px 16px 88px;
+  &__title {
+    color: $textDark;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  &__description {
+    color: $text;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 0 56px;
+  }
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  &__icon {
+    width: 48px;
+    height: 48px;
+    padding: 0 12px;
+  }
+  &__link {
+    width: 72px;
+    height: 48px;
+  }
+}
