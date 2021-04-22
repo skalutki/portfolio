@@ -20,31 +20,37 @@ fetch("https://api.github.com/users/skalutki/repos?sort=created")
     
     if (homepage && description){
         const myTemplate = `
-        <section class="project">
-              <header class="project__header">
+        <article class="project">
+              <div class="project__header">
                 <span class="project__header--icon"></span>
-              </header>
-              <div class="project__grid">
-                <img src="../assets/icons/Github Icon.png" class="project__avatar" alt="github icon" width="24px" height="24px" />
-                <div class="nie wiem czy potrzebne">
-                  <!--do usunięcia w poźniejszym czasie jesli okaze sie nie potrzebne -->
-                  <ul class="description__list">
-                    <li class="description__list--item">
-                      project: <span class="description__list--itemTitle description__list--project-title">${name}</span>
-                    </li>
-                    <li class="description__list--item">description: <span class="description__list--project-description"></span>${description}</li>
-                    <li class="description__list--item">
-                      demo: &lt;<span class="description__list--project-demo"><a href="${homepage}" class="description__list--link" title="Project demo link">see here</a></span
-                      >&gt;
-                    </li>
-                    <li class="description__list--item">
-                      github: &lt;<span class="description__list--project-source"><a href="${html_url}" class="description__list--link" title="Project repository link">source code</a></span
-                      >&gt;
-                    </li>
-                  </ul>
-                </div>
+                <span class="project__header--icon"></span>
+                <span class="project__header--icon"></span>
               </div>
-            </section>
+              <div class="project__content">
+                <img src="../assets/icons/Github__Icon.png" class="project__avatar" alt="" />
+                                  
+                <h3 class="project__title project__grid">
+                    <span class="project__label">project:</span>
+                    <span class="project__title--name">${name}</span>
+                </h3>
+                <p class="project__description project__grid">
+                    <span class="project__label">description:</span>
+                    <span class="project__description--name">${description}</span>
+                </p>
+                <p class="project__demo project__grid">
+                    <span class="project__label">demo: </span>
+                        <span>&lt;<span class="project__demo--name"><a href="${homepage}" class="project__link" title="Project demo link">see here</a></span>&gt;
+                    </span>
+                </p>
+
+                <p class="project__repo project__grid">
+                    <span class="project__label">github: </span>
+                        <span>&lt;<span class="description__list--project-source"><a href="${html_url}" class="project__link" title="Project repository link">source code</a></span>&gt;
+                    </span>
+                </p>
+                
+              </div>
+            </article>
         `;
 
         project.innerHTML += myTemplate;

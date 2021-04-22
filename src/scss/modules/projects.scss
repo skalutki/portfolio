@@ -20,42 +20,68 @@
 }
 
 .project {
+  background: $projectBackground;
   font-family: "Roboto Mono", monospace;
+  font-size: 13px;
   margin-bottom: 24px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  color: $projectText;
+
   &__header {
-    background-color: $projectTitleBackground;
+    background: $projectTitleBackground;
     height: 40px;
-    border-radius: 16px 16px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 12px;
 
     &--icon {
-      background-color: $projectSwitch;
+      display: block;
+      background: $projectSwitch;
       width: 8px;
       height: 8px;
-      z-index: 3;
+      border-radius: 50%;
+      margin-right: 8px;
     }
   }
-  &__grid {
-    background-color: $projectBackground;
+  &__content {
     padding: 24px 16px 48px;
-    border-radius: 0 0 16px 16px;
   }
   &__avatar {
     margin-bottom: 24px;
   }
-}
-
-.description__list {
-  list-style: none;
-  text-align: justify-all;
-  padding: 0;
-  margin: 0;
-  &--item {
-    &Title {
+  &__grid {
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    grid-column-gap: 4px;
+    margin: 0;
+  }
+  &__title {
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    &--name {
       font-weight: 700;
       color: $white;
     }
   }
-  &--link {
+  &__link {
     color: $projectLink;
+    text-decoration: none;
+  }
+  &__label {
+    text-align: end;
+    display: block;
+  }
+  &__description {
+    margin: 0 0 24px;
+    &--name {
+      color: $projectGreyDescription;
+    }
+  }
+  &__demo {
+    margin-bottom: 8px;
   }
 }

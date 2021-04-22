@@ -207,33 +207,39 @@
         <p class="projects__description">
           I started my frontend developer path in 2020. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.
         </p>
-        <section class="project">
-          <header class="project__header">
+        <article class="project">
+          <div class="project__header">
             <span class="project__header--icon"></span>
-          </header>
-          <div class="project__grid">
-            <img src="../assets/icons/Github Icon.png" class="project__avatar" />
-            <div class="nie wiem czy potrzebne">
-              <!--do usunięcia w poźniejszym czasie jesli okaze sie nie potrzebne -->
-              <ul class="description__list">
-                <li class="description__list--item">
-                  project: <span class="description__list--itemTitle description__list--project-title">tytuł</span>
-                </li>
-                <li class="description__list--item">description: <span class="description__list--project-description"></span> opis projektu</li>
-                <li class="description__list--item">
-                  demo: &lt;<span class="description__list--project-demo"
-                    ><a href="#" class="description__list--link" title="Project demo link">see here</a></span
-                  >&gt;
-                </li>
-                <li class="description__list--item">
-                  github: &lt;<span class="description__list--project-source"
-                    ><a href="#" class="description__list--link" title="Project repository link">source code</a></span
-                  >&gt;
-                </li>
-              </ul>
-            </div>
+            <span class="project__header--icon"></span>
+            <span class="project__header--icon"></span>
           </div>
-        </section>
+          <div class="project__content">
+            <img src="../assets/icons/Github__Icon.png" class="project__avatar" alt="" />
+
+            <h3 class="project__title project__grid">
+              <span class="project__label">project:</span>
+              <span class="project__title--name">tytuł</span>
+            </h3>
+            <p class="project__description project__grid">
+              <span class="project__label">description:</span>
+              <span class="project__description--name">opis projektu</span>
+            </p>
+            <p class="project__demo project__grid">
+              <span class="project__label">demo:</span>
+              <span
+                >&lt;<span class="project__demo--name"><a href="#" class="project__link" title="Project demo link">see here</a></span
+                >&gt;
+              </span>
+            </p>
+            <p class="project__repo project__grid">
+              <span class="project__label">github:</span>
+              <span
+                >&lt;<span class="project__repo--name"><a href="#" class="project__link" title="Project repository link">source code</a></span
+                >&gt;
+              </span>
+            </p>
+          </div>
+        </article>
       </section>
 
       <footer class="contact" id="contact">
