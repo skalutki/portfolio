@@ -27,7 +27,7 @@ fetch("https://api.github.com/users/skalutki/repos?sort=created")
                 <span class="project__header--icon"></span>
               </div>
               <div class="project__content">
-                <img src="../assets/icons/Github__Icon.png" class="project__avatar" alt="" />
+                <img src="img/Github__Icon.png" class="project__avatar" alt="" />
                                   
                 <h3 class="project__title project__grid">
                     <span class="project__label">project:</span>
