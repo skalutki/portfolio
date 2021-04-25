@@ -1,7 +1,7 @@
 .skills {
   background-color: $blue;
   color: $white;
-  padding: 68px 16px 88px;
+  padding: 64px 16px 88px;
   &__title {
     text-align: center;
     font-size: 36px;
@@ -9,6 +9,20 @@
     font-weight: 700;
     font-style: normal;
     margin-bottom: 64px;
+    @media screen and (min-width: 900px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+  &__grid {
+    @media screen and (min-width: 900px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 24px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    padding: 80px 126px 176px;
   }
 }
 

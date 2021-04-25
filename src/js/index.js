@@ -13,7 +13,7 @@ fetch("https://api.github.com/users/skalutki/repos?sort=created")
   .then((resp) => {
     for (let repo of resp) {
       const {name, html_url, homepage, description } = repo;
-      const project = document.querySelector(".projects-js");
+      const project = document.querySelector(".projects__grid-js");
       const img = new Image();
       img.src = "../assets/icons/Github Icon.png"
       
