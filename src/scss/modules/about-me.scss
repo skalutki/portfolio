@@ -1,14 +1,26 @@
+@keyframes hand {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(90);
+  }
+}
+
 .about-me {
   padding: 64px 16px 88px;
+
   &__picture {
     display: flex;
     justify-content: center;
     align-items: center;
+
     &--picture {
       width: 96px;
       height: 96px;
       border: 16px solid $blueLightest;
       border-radius: 50%;
+
       @media screen and (min-width: 900px) {
         width: 178px;
         height: 178px;
@@ -16,6 +28,7 @@
       }
     }
   }
+
   &__title {
     color: $textDark;
     font-weight: 700;
@@ -23,6 +36,7 @@
     line-height: 32px;
     text-align: center;
     margin-bottom: 16px;
+
     &--color {
       color: $blue;
     }
@@ -30,24 +44,33 @@
     @media screen and (min-width: 900px) {
       font-size: 32px;
       line-height: 40px;
+      margin-bottom: 24px;
     }
   }
+
   &__description {
     font-size: 16px;
     line-height: 32px;
     text-align: center;
+
     &--id {
       text-decoration: none;
       color: $blue;
       font-weight: 700;
     }
+
     @media screen and (min-width: 900px) {
       font-size: 20px;
       line-height: 40px;
+      margin: 0 0 68px;
     }
   }
+
   &__mail {
     margin-top: 48px;
+    @media screen and (min-width: 900px) {
+      margin: 0;
+    }
   }
   /*&__brackets{
     display: none;
@@ -57,6 +80,7 @@
 
   &__container {
     position: relative;
+
     &::before {
       @media screen and (min-width: 900px) {
         content: "";
@@ -74,6 +98,9 @@
         position: absolute;
         right: 0;
       }
+    }
+    @media screen and (min-width: 900px) {
+      padding: 0 76px;
     }
   }
 
@@ -113,5 +140,10 @@
     top: 72, 5px;
     position: absolute;
     z-index: 2;
+  }
+
+  &__animation {
+    display: inline-block;
+    animation: hand 0.5s ease-in-out infinite;
   }
 }

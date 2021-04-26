@@ -57,10 +57,12 @@
       font-size: 16px;
       line-height: 24px;
     }
+
     &--itemGreen::before {
       content: url("../assets/icons/small-tick-green.png");
       padding-right: 12px;
     }
+
     &--itemWhite::before {
       content: url("../assets/icons/small-tick-white.png");
       padding-right: 12px;
@@ -69,6 +71,10 @@
     &--itemDot::before {
       content: url("../assets/icons/Bullet.png");
       padding-right: 12px;
+    }
+
+    @media screen and (min-width: 900px) {
+      padding: 24px 77px 8px;
     }
   }
 }
