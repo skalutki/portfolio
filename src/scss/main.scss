@@ -1,12 +1,25 @@
 @import "~normalize.css";
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:ital,wght@0,400;1,600&display=swap");
+
 @import "_variables";
 @import "modules/about-me.scss";
+@import "modules/hand.scss";
 @import "modules/skills.scss";
 @import "modules/projects.scss";
 @import "modules/contact.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:ital,wght@0,400;1,600&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background: $white;
   color: $text;
@@ -25,6 +38,7 @@ body {
 }
 
 .mail {
+  text-align: center;
   background-color: $mailBackground;
   border-radius: 48px;
   height: 40px;

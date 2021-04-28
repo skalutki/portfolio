@@ -39,13 +39,13 @@ fetch("https://api.github.com/users/skalutki/repos?sort=created")
                 </p>
                 <p class="project__demo project__grid">
                     <span class="project__label">demo: </span>
-                        <span>&lt;<span class="project__demo--name"><a href="${homepage}" class="project__link" title="Project demo link">see here</a></span>&gt;
+                        <span>&lt;<span class="project__demo--name"><a target="_blank" rel="noopener noreferrer" href="${homepage}" class="project__link" title="Project demo link">see here</a></span>&gt;
                     </span>
                 </p>
 
                 <p class="project__repo project__grid">
                     <span class="project__label">github: </span>
-                        <span>&lt;<span class="description__list--project-source"><a href="${html_url}" class="project__link" title="Project repository link">source code</a></span>&gt;
+                        <span>&lt;<span class="description__list--project-source"><a target="_blank" rel="noopener noreferrer" href="${html_url}" class="project__link" title="Project repository link">source code</a></span>&gt;
                     </span>
                 </p>
                 
