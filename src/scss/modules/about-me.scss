@@ -9,11 +9,30 @@
 
 .about-me {
   padding: 64px 16px 88px;
+  position: relative;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 100%;
+    padding-bottom: 176px;
+  }
+
+  &__bubble {
+    position: absolute;
+    left: calc(50% + 90px);
+    top: -26px;
+  }
 
   &__picture {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     &--picture {
       width: 96px;
@@ -21,10 +40,10 @@
       border: 16px solid $blueLightest;
       border-radius: 50%;
 
-      @media screen and (min-width: 900px) {
+      @media screen and (min-width: $desktop) {
         width: 178px;
         height: 178px;
-        margin-bottom: 72px;
+        border: 24px solid $blueLightest;
       }
     }
   }
@@ -34,14 +53,15 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 32px;
-    text-align: center;
+    margin-top: 72px;
     margin-bottom: 16px;
 
     &--color {
       color: $blue;
+      white-space: nowrap;
     }
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: $desktop) {
       font-size: 32px;
       line-height: 40px;
       margin-bottom: 24px;
@@ -51,99 +71,93 @@
   &__description {
     font-size: 16px;
     line-height: 32px;
-    text-align: center;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+      font-weight: 300;
+      color: $text;
+    }
 
     &--id {
       text-decoration: none;
       color: $blue;
       font-weight: 700;
     }
-
-    @media screen and (min-width: 900px) {
-      font-size: 20px;
-      line-height: 40px;
-      margin: 0 0 68px;
-    }
   }
 
   &__mail {
     margin-top: 48px;
-    @media screen and (min-width: 900px) {
-      margin: 0;
+
+    @media screen and (min-width: $desktop) {
+      margin: 68px 0 0 0;
     }
   }
-  /*&__brackets{
-    display: none;
-    @media screen and (min-width: 900px)
-    @media screen and (min-width: 900px)
-  }*/
 
   &__container {
     position: relative;
+    margin: 0 auto;
 
-    &::before {
-      @media screen and (min-width: 900px) {
+    @media screen and (min-width: $desktop) {
+      max-width: 786px;
+
+      &::before {
         content: "";
-        background: url(../assets/img/{.svg);
+        background: url("../assets/img/{.svg");
+        width: 83.23px;
+        height: 254.88px;
         position: absolute;
-        left: 0;
+        left: -76px;
         display: block;
       }
-    }
 
-    &::after {
-      @media screen and (min-width: 900px) {
+      &::after {
         content: "";
+        display: block;
         background: url("../assets/img/}.svg");
+        width: 83.23px;
+        height: 254.88px;
         position: absolute;
-        right: 0;
+        right: -76px;
+        top: 0;
       }
     }
-    @media screen and (min-width: 900px) {
-      padding: 0 76px;
-    }
-  }
-
-  @media screen and (min-width: 900px) {
-    padding: 80px 229px 176px;
   }
 }
 
 .hello {
   display: none;
+  margin: 0;
 
-  @media screen and (min-width: 900px) {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 230px;
-    height: 72px;
-    margin: 0;
-    position: absolute;
-    right: 178px;
-    top: 50px;
-  }
-  &__description {
-    background-color: $blue;
-    color: $white;
+  @media screen and (min-width: $desktop) {
+    display: block;
     padding: 16px 19px;
+    border-radius: 16px;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 40px;
-    margin: 0;
-    border-radius: 16px;
-  }
-  &__subtract {
-    width: 17.42px;
-    height: 22.66px;
-    left: 32px;
-    top: 72, 5px;
-    position: absolute;
-    z-index: 2;
+    background-color: $blue;
+    color: $white;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 100%;
+      left: 32px;
+      content: "";
+      display: block;
+      width: 17.42px;
+      height: 22.66px;
+      background: url("../assets/img/Speech_cloud.svg");
+    }
   }
 
   &__animation {
-    display: inline-block;
-    animation: hand 0.5s ease-in-out infinite;
+    @media screen and (min-width: $desktop) {
+      display: inline-block;
+      animation: hand 0.5s infinite ease-in-out;
+    }
   }
 }

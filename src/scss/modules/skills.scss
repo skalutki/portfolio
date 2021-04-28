@@ -2,6 +2,7 @@
   background-color: $blue;
   color: $white;
   padding: 64px 16px 88px;
+
   &__title {
     text-align: center;
     font-size: 36px;
@@ -9,29 +10,41 @@
     font-weight: 700;
     font-style: normal;
     margin-bottom: 64px;
-    @media screen and (min-width: 900px) {
+
+    @media screen and (min-width: $desktop) {
       font-size: 48px;
       line-height: 56px;
+      margin: 0 0 128px;
     }
   }
   &__grid {
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: $desktop) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 24px;
+      max-width: 1184px;
+      margin: 0 auto;
     }
   }
-  @media screen and (min-width: 900px) {
+
+  @media screen and (min-width: $desktop) {
     padding: 80px 126px 176px;
   }
 }
 
 .skill {
-  margin-top: 64px;
+  margin: 64px auto 0;
+  max-width: 288px;
+  margin-bottom: 64px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+  }
+
   &__div {
     display: flex;
     justify-content: center;
     align-items: center;
+
     &__icon {
       font-style: normal;
       font-weight: 700;
@@ -48,33 +61,38 @@
     text-align: center;
   }
   &__list {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    margin: 0 auto;
+    width: 288px;
+    color: $BlueLight;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
     &--item {
-      color: $BlueLight;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 24px;
+      padding: 0 0 0 24px;
+      margin: 0 0 16px;
+      position: relative;
     }
 
     &--itemGreen::before {
+      position: absolute;
+      left: 0;
       content: url("../assets/icons/small-tick-green.png");
-      padding-right: 12px;
     }
 
     &--itemWhite::before {
+      position: absolute;
+      left: 0;
       content: url("../assets/icons/small-tick-white.png");
-      padding-right: 12px;
     }
 
     &--itemDot::before {
+      position: absolute;
+      left: 0;
       content: url("../assets/icons/Bullet.png");
-      padding-right: 12px;
-    }
-
-    @media screen and (min-width: 900px) {
-      padding: 24px 77px 8px;
     }
   }
 }

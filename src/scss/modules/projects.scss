@@ -8,7 +8,7 @@
     font-weight: 700;
     color: $textDark;
     margin: 0 0 32px;
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: $desktop) {
       font-size: 48px;
       line-height: 56px;
     }
@@ -20,28 +20,31 @@
     font-size: 16px;
     line-height: 32px;
     text-align: center;
-    margin: 0 auto 32px;
-    @media screen and (min-width: 900px) {
+    margin: 0 auto 46px;
+
+    @media screen and (min-width: $desktop) {
       font-size: 20px;
       line-height: 40px;
     }
   }
 
   &__container {
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: $desktop) {
       padding: 0 201px 128px;
     }
   }
 
   &__grid {
-    @media screen and (min-width: 900px) {
-      display: grid;
+    display: grid;
+    column-gap: 24px;
+    row-gap: 24px;
+
+    @media screen and (min-width: $tablet) {
       grid-template-columns: 1fr 1fr;
-      column-gap: 24px;
     }
   }
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: $desktop) {
     padding: 80px 126px 176px;
   }
 }
@@ -50,7 +53,6 @@
   background: $projectBackground;
   font-family: "Roboto Mono", monospace;
   font-size: 13px;
-  margin-bottom: 24px;
   border-radius: 16px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
   overflow: hidden;
@@ -75,6 +77,10 @@
   }
   &__content {
     padding: 24px 16px 48px;
+
+    @media screen and (min-width: $desktop) {
+      padding: 12px 48px 82px;
+    }
   }
   &__avatar {
     margin-bottom: 24px;
@@ -104,6 +110,10 @@
   }
   &__description {
     margin: 0 0 24px;
+
+    @media (min-width: $desktop) {
+      margin: 0;
+    }
     &--name {
       color: $projectGreyDescription;
     }
