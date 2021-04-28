@@ -109,11 +109,8 @@
     display: block;
   }
   &__description {
-    margin: 0 0 24px;
+    margin-bottom: 24px;
 
-    @media (min-width: $desktop) {
-      margin: 0;
-    }
     &--name {
       color: $projectGreyDescription;
     }
