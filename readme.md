@@ -1,17 +1,64 @@
 ![cover](https://skalutki.github.io/portfolio/og.png)
 
-# WTF Webpack Starter Kit
+# PORTFOLIO
 
-Simple toolkit for your static websites development.
+## Tabel of contents
 
-## How to use it?
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Demo](#demo)
+- [Features](#features)
+- [Status](#status)
+- [Sources](#sources)
+- [Contact](#contact)
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+## General info
 
-## Available scripts
+Personal site with projects list & skill by Karol Skalinski.
+This project is being developed in progress of course **_WTF: Co ten frontend_**.
+Its purpose is to learn the basics of the frontend and this website was created to show this knowledge in practice.
+
+## Technologies
+
+- HTML 5
+- SASS -SCSS
+- BEM
+- RWD
+- Mobile first
+- Vanilla JS
+- Flex box
+- Grid
+- Webpack
+- Fetch API
+- CSS amimation
+
+## Setup
+
+In console type `npm install` then choose one of the options:
 
 `npm run start` - runs development mode
 
 `npm run build` - runs build process for production
 
 `npm run publish` - runs build process and publish the page using `gh-pages` branch
+
+## Demo
+
+Demo version of this project: [Link](https://skalutki.github.io/portfolio/)
+
+## Features
+
+- You can see my skills and my own projects
+
+## Status
+
+The project is finished.
+
+## Sources
+
+This web is inspire by Maciej Korsan and tutorial by [WTF: Co ten frontend](https://cotenfrontend.pl/)
+
+## Contact
+
+Created by skalutki <skalutki@gmail.com> - feel free to contact me!
