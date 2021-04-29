@@ -50,6 +50,8 @@ Demo version of this project: [Link](https://skalutki.github.io/portfolio/)
 ## Features
 
 - You can see my skills and my own projects
+- Projects are imported from an external source (fetch API)
+- RWD
 
 ## Status
 
